@@ -1,0 +1,100 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #2c3e50, #bdc3c7); /* Dark blue to light purple gradient */
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.3); /* Fully translucent background */
+    color: #fff;
+    padding: 10px 20px; /* Adjusted padding for header content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures header is above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Adds a blur effect */
+}
+
+header .discord {
+    max-height: 40px; /* Adjust max-height as needed */
+    align-self: flex-start; /* Aligns the image to the top of the header */
+}
+
+header nav {
+    flex: 1; /* Takes remaining space in header */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Adjust the gap value to increase space between categories */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px; /* Increased padding for better touch/click area */
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.intro-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.join-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #1a73e8; /* Sky blue color */
+    border: none;
+    border-radius: 30px; /* Smooth edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.join-button:hover {
+    background-color: #1669c1; /* Darker blue on hover */
+}
