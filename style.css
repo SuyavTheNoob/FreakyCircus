@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom right, #2c3e50, #bdc3c7); /* Dark blue to light purple gradient */
+    background: linear-gradient(to bottom right, #03eeff, #cc00ff); /* Dark blue to light purple gradient */
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
@@ -49,7 +49,7 @@ header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 50px; /* Adjust the gap value to increase space between categories */
+    gap: 80px; /* Adjust the gap value to increase space between categories */
     margin: 0;
     padding: 0;
 }
@@ -71,11 +71,13 @@ header nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    margin-top: 100px; /* Adjust top margin to prevent overlap with header */
+}
+
+.main-image {
+    width: 300px; /* Adjust width to make the image slightly bigger */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the image */
 }
 
 .intro-text {
@@ -87,14 +89,18 @@ main {
 .join-button {
     padding: 20px 40px;
     font-size: 24px;
-    color: #fff;
-    background-color: #1a73e8; /* Sky blue color */
-    border: none;
+    color: #000000;
+    background-color: #1eabfd; /* Sky blue color */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Solid border with slight transparency */
     border-radius: 30px; /* Smooth edges */
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
 }
 
 .join-button:hover {
-    background-color: #1669c1; /* Darker blue on hover */
+    padding: 20px 40px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000000; /* Darker blue on hover */
+    border-color: #000; /* Black border on hover */
 }
